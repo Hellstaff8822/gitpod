@@ -3,6 +3,11 @@
   flex-direction: column;
   margin-top: 177px;
   margin-bottom: 160px;
+  @include mobile {
+    margin-bottom: 60px;
+    margin-top: 70px;
+
+  }
 
   &__title {
     color: var(--black);
@@ -14,6 +19,10 @@
     @include tablet {
       font-size: 40px;
     }
+    @include mobile {
+      font-size: 25px;
+      margin-bottom: 24px;
+    }
   }
 
   &__desc {
@@ -24,6 +33,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 31.92px;
+    @include mobile {
+      display: none;
+    }
   }
 
   &__gitpod {
@@ -38,12 +50,15 @@
     background: #ffe4bc;
     margin-top: 6px;
     padding: 0 16px;
+    @include mobile {
+      display: none;
+    }
   }
   &__content {
     display: flex;
     justify-content: center;
     gap: 26px;
-    @include tablet {
+    @include desktop-small {
       flex-direction: column;
       align-items: center;
     }
@@ -58,11 +73,19 @@
   padding: 56px 78px 86px 78px;
   width: 642px;
   
+  @include mobile {
+    padding: 20px 15px 19px 19px;
+    width: 342px;
+  }
+
   &__title {
     color: var(--black);
     font-size: 32px;
     font-weight: 700;
     line-height: 40px;
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   &__desc {
@@ -72,6 +95,10 @@
     font-weight: 400;
     line-height: 31.92px;
     margin-bottom: 62px;
+    @include mobile {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
   }
 
   &__buttons {
@@ -79,6 +106,9 @@
     flex-direction: column;
     gap: 16px;
     margin-bottom: 64px;
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
 
   &__btn {
@@ -92,6 +122,10 @@
     font-weight: 700;
     line-height: 16px;
     padding: 15px 33px;
+    @include mobile {
+      font-size: 9px;
+      padding: 8px 22px;
+    }
   }
 }
 .first {
@@ -126,6 +160,10 @@
   background: #fff;
   padding: 58px 56px 86px 56px;
   width: 642px;
+  @include mobile {
+    padding: 20px 15px 19px 19px;
+    width: 342px;
+  }
   &__title {
     color: var(--black);
     font-size: 32px;
@@ -133,6 +171,9 @@
     line-height: 40px;
     margin-bottom: 7px;
     text-align: center;
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   &__desc {
@@ -142,6 +183,9 @@
     font-weight: 400;
     line-height: 31.92px;
     margin-bottom: 32px;
+    @include mobile {
+      font-size: 16px;
+    }
   }
   &__languages {
     display: flex;
@@ -164,6 +208,9 @@
     border: none;
     padding: 15px;
     position: relative;
+    @include mobile {
+      height: auto;
+    }
   }
 
   &__wrapper {
@@ -181,6 +228,9 @@
       font-size: 20px;
       font-weight: 400;
       line-height: 20px;
+      @include mobile {
+        font-size: 16px;
+      }
     }
   }
 
@@ -200,6 +250,11 @@
     transition: transform 0.3s ease-in-out;
     &:hover {
       transform: scale(1.1);
+    }
+    @include mobile {
+      font-size: 9px;
+      top: 8px;
+      left: 206px;
     }
   }
 }

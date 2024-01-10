@@ -4,13 +4,17 @@
   align-items: center;
   margin-top: 395px;
   margin-bottom: 337px;
+
   @include tablet {
     flex-direction: column-reverse;
     gap: 30px;
     margin-top: 100px;
     margin-bottom: 180px;
   }
-
+  @include mobile {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
 
   &__info {
     @include tablet {
@@ -44,29 +48,28 @@
     @include mobile {
       font-size: 13px;
       text-align: center;
-      margin-bottom: 50px
+      margin-bottom: 50px;
     }
   }
 
   &__img {
     transition: 0.2s all ease-in-out;
-    &:hover{
-      &:hover{
+    &:hover {
+      &:hover {
         border-radius: 14px;
-        box-shadow: -2px 2px 15px 8px rgba(255, 138, 0, 0.40);
+        box-shadow: -2px 2px 15px 8px rgba(255, 138, 0, 0.4);
       }
     }
   }
 }
 .prebuild-btn {
-    display: flex;
-    gap: 16px;
-    
-   
+  display: flex;
+  gap: 16px;
+
   &__first {
     background: #ffae33;
     transition: 0.2s all ease-in-out;
-    &:hover{
+    &:hover {
       color: white;
       background: #de6406;
     }
@@ -74,13 +77,12 @@
       font-size: 10px;
       padding: 5px 12px;
     }
-    
   }
 
   &__second {
     background: #ffb0ae;
     transition: 0.2s all ease-in-out;
-    &:hover{
+    &:hover {
       color: white;
       background: #b455c5;
     }

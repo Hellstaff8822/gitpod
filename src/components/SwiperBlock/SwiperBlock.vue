@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="swiper">
     <swiper :slides-per-view="3" :space-between="24" :grid="{
       column: 1,
@@ -134,4 +134,4 @@ export default {
   padding-left: 145px;
 
 }
-</style>
+</style> -->
