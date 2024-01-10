@@ -1,10 +1,9 @@
-<!-- <template>
+<template>
   <div class="swiper">
-    <swiper :slides-per-view="3" :space-between="24" :grid="{
-      column: 1,
-    }" :pagination="{
+    <swiper :slides-per-view="'auto'" :space-between="30" :grid="{
+      }" :pagination="{
   clickable: true,
-}"  class="mySwiper">
+}" class="mySwiper">
       <swiper-slide v-for="(developer, index) in developers" :key="`${developer.name}-${index}`">
         <div class="developers-item">
           <div class="developers-item__info small-developers-item">
@@ -29,6 +28,32 @@
 
       </swiper-slide>
     </swiper>
+    <swiper :direction="'vertical'"  :space-between="24" :pagination="{
+        clickable: true,
+      }" class="mySwiper-mobile">
+      <swiper-slide v-for="(developer, index) in developers" :key="`${developer.name}-${index}`">
+        <div class="developers-item ">
+          <div class="developers-item__info ">
+            <span class="title">{{ developer.title }}</span>
+            <br /><br />
+            <span class="opinion">{{ developer.opinion }}</span>
+
+          </div>
+
+          <div class="developers-item__developer">
+            <div class="developers-item__img">
+              <img :src="developer.avatar" :alt="developer.name" />
+            </div>
+            <div class="developers-item__info">
+              <div class="developers-item__name">{{ developer.name }}</div>
+              <div class="developers-item_position">
+                {{ developer.position }} <span>{{ developer.company }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </swiper-slide></swiper>
   </div>
 </template>
 
@@ -121,17 +146,44 @@ export default {
 }
 
 
+.mySwiper {
+  @include mobile {
+    display: none;
+  }
+
+  .swiper-wrapper {
+    @include mobile {
+      padding-left: 45px;
+      height: 350px;
+    }
+
+  }
+
+}
+
+.mySwiper-mobile {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+
+}
+
+
 .swiper-slide {
-  max-width: 384px;
+  width: 384px;
 
 }
 
 .swiper-container {
-  width: 85%
+  width: 100%;
 }
 
 .swiper-wrapper {
-  padding-left: 145px;
+  @include mobile {
+    height: 350px;
+  }
 
 }
-</style> -->
+</style>
