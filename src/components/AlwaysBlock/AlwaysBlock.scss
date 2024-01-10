@@ -5,6 +5,7 @@
   margin-top: 80px;
   @include desktop-small {
     justify-content: center;
+    margin-top: 100px;
   }
 
   &__info {
@@ -64,6 +65,7 @@
   @include tablet {
     flex-direction: column;
     align-items: center;
+    gap: 25px; 
   }
   &__components {
     display: flex;
@@ -92,6 +94,8 @@
     @include mobile {
       font-size: 13px;
       padding: 7px 35px;
+      pointer-events: none;
+
     }
   }
 

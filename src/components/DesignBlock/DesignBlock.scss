@@ -23,6 +23,9 @@
       border-radius: 14px;
       box-shadow: -2px 2px 15px 8px rgba(255, 138, 0, 0.40);
     }
+    @include mobile{
+      pointer-events: none;
+    }
     
   }
 

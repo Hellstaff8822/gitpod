@@ -125,6 +125,7 @@
     @include mobile {
       font-size: 9px;
       padding: 8px 22px;
+      pointer-events: none;
     }
   }
 }
@@ -184,7 +185,7 @@
     line-height: 31.92px;
     margin-bottom: 32px;
     @include mobile {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
   &__languages {
@@ -253,8 +254,11 @@
     }
     @include mobile {
       font-size: 9px;
-      top: 8px;
+      top: 11px;
       left: 206px;
+      pointer-events: none;
+      padding: 6px 12px;
+      
     }
   }
 }

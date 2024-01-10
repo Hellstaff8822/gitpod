@@ -34,7 +34,7 @@
         </div>
         <div class="started-launch__languages">
           <div class="started-launch__language">
-            <input type="text" class="started-launch__field" />
+            <input type="text" readonly class="started-launch__field" />
             <div class="started-launch__wrapper">
               <div class="started-launch__icon">
                 <img
@@ -46,7 +46,7 @@
             <button class="started-launch__button">Launch workspace</button>
           </div>
           <div class="started-launch__language">
-            <input type="text" class="started-launch__field" />
+            <input type="text" readonly class="started-launch__field" />
             <div class="started-launch__wrapper">
               <div class="started-launch__icon">
                 <img src="@/assets/icons/lang/Python.svg" alt="Python" />
@@ -56,7 +56,7 @@
             <button class="started-launch__button">Launch workspace</button>
           </div>
           <div class="started-launch__language">
-            <input type="text" class="started-launch__field" />
+            <input type="text" readonly class="started-launch__field" />
             <div class="started-launch__wrapper">
               <div class="started-launch__icon">
                 <img src="@/assets/icons/lang/Go.svg" alt="Go" />
@@ -66,7 +66,7 @@
             <button class="started-launch__button">Launch workspace</button>
           </div>
           <div class="started-launch__language">
-            <input type="text" class="started-launch__field" />
+            <input type="text" readonly class="started-launch__field" />
             <div class="started-launch__wrapper">
               <div class="started-launch__icon">
                 <img src="@/assets/icons/lang/Rust.svg" alt="Rust" />
@@ -76,7 +76,7 @@
             <button class="started-launch__button">Launch workspace</button>
           </div>
           <div class="started-launch__language">
-            <input type="text" class="started-launch__field" />
+            <input type="text" readonly class="started-launch__field" />
             <div class="started-launch__wrapper">
               <div class="started-launch__icon">
                 <img src="@/assets/icons/lang/Java.svg" alt="Java" />
@@ -86,7 +86,7 @@
             <button class="started-launch__button">Launch workspace</button>
           </div>
           <div class="started-launch__language">
-            <input type="text" class="started-launch__field" />
+            <input type="text" readonly class="started-launch__field" />
             <div class="started-launch__wrapper">
               <div class="started-launch__icon">
                 <img src="@/assets/icons/lang/Svelte.svg" alt="Svelte" />

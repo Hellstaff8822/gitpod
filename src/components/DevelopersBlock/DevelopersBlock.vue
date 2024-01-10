@@ -232,20 +232,18 @@ export default {
 
 
 .mySwiper {
-
-
-
   @include mobile {
     display: none;
   }
 
   .swiper-wrapper {
-    @include desktop-small {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
+    @include mobile {
+      padding-left: 45px;
+      height: 350px;
     }
+
   }
+
 }
 
 .mySwiper-mobile {
@@ -261,27 +259,14 @@ export default {
 .swiper-slide {
   width: 384px;
 
-  @include tablet {
-    width: 384px;
-  }
-
 }
 
 .swiper-container {
-  width: 85%;
-
-  @include desktop-small {
-
-    width: 100%;
-  }
-
-
-
+  width: 100%;
 }
 
 .swiper-wrapper {
   @include mobile {
-    padding-left: 45px;
     height: 350px;
   }
 
